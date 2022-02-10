@@ -103,7 +103,7 @@ window.onload = function () {
     context = myStickman.getContext('2d');
     context.beginPath();
     context.strokeStyle = "#fff";
-    context.lineWidth = 2;
+    context.lineWidth = 5;
   };
   
     head = function(){
