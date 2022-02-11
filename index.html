@@ -31,7 +31,13 @@ Hope to work with you soon :)-->
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/heroes/">
 
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
+<script type="text/javascript">
+  emailjs.init('user_4bce2fpEUI9tSXWMD3IK1')
+
+</script
 
     <!-- Bootstrap core CSS -->
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -61,22 +67,52 @@ Hope to work with you soon :)-->
   <body>
 
 <main>
+
+
+
+
+
   <a id ="home"> </a>
   <div class="container">
+
+
+
      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+
+
+
 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+
+
 
          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
          <span class="fs-4 text-primary"><b>Pani Sphikas</b> <i class="fas fa-laptop-medical"></i></span>
        </a>
 
-       <ul class="nav nav-pills">
-         <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
- <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#whatioffer" class="nav-link">What I offer</a></li>
-         <li class="nav-item"><a href="#projects" class="nav-link">UX portfolio</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-       </ul>
+       <ul class="nav nav-pills ">
+
+<!--Collapsable part of navigation for mobile set as sm (small) so only comes up -->
+  <nav class="navbar navbar-expand-sm navbar-primary" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+ <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-light"><i class="fas fa-bars" style="font-size:25px"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+  <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+             <li class="nav-item"><a href="#whatioffer" class="nav-link">What I offer</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+           <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
      </header>
    </div>
 
@@ -361,18 +397,23 @@ The backup label we have released works so well that users can produce a label w
          <span class="emoji wave" role="img" aria-label="hand wave"></span></h4>
         <p class="col-lg-10 fs-4">Do you want to work together or have any questons? Fill out the form and fill me in with the details .</p>
       </div>
+    
+    <!--form is usising emailJS-->
       <div class="col-md-10 mx-auto col-lg-5">
-        <form class="p-4 p-md-5 border rounded-3 bg-light">
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Your email address</label>
-          </div>
-<div class="form-floating mb-3">
-           <textarea class="form-control" aria-label="With textarea" placeholder="Message"></textarea>
-            <label for="floatingPassword">Message</label
-          </div>
+        <form class="p-4 p-md-5 border rounded-3 bg-light" id="form">
+         <div class="form-floating mb-3">
+    <input type="text" name="user_email" id="user_email" class ="form-control"placeholder="name@example.com">
+             <label for="floatingInput">Your email address</label>
+  </div>
+              <br>
+               <div class="form-floating mb-3"> 
+    <textarea placeholder="Type your message here...." name = "message" id="message" tabindex="5" required  class="form-control"></textarea> 
+                 <label for="floatingInput">Message</label>
+        </div>
 <br>
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Send</button>
+                <input type="submit" class="w-100 btn btn-lg btn-primary" id="button" value="Send Message" >
+            <br>
+   
           <hr class="my-4">
           <small class="text-muted">Alteranively email me at pharmtechps@gmail.com.</small>
         </form>
@@ -462,3 +503,28 @@ The backup label we have released works so well that users can produce a label w
     animation-iteration-count: infinite;
 }
 </style>
+
+
+//EMAILJS SCRIPT
+<SCRIPT>
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'contact_form';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Message';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+</SCRIPT>
