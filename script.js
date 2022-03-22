@@ -20,11 +20,11 @@ var word ; // Selected word
 
 var guess ; // Geuss
 
-var guesses = [ ]; // Stored guesses
+var geusses = [ ]; // Stored geusses
 
 var lives ; // Lives
 
-var counter ; // Count correct guesses
+var counter ; // Count correct geusses
 
 var space; // Number of spaces in word '-'
 
@@ -102,7 +102,7 @@ catagoryName.innerHTML = "";
 
 
 
-// Create guesses ul
+// Create geusses ul
 
 result = function () {
 
@@ -134,7 +134,7 @@ guess.innerHTML = "_";
 
 
 
-guesses.push(guess);
+geusses.push(guess);
 
 wordHolder.appendChild(correct);
 
@@ -166,9 +166,9 @@ document.getElementById("mylives").innerHTML = result;
 
 }
 
-for (var i = 0; i < guesses.length; i++) {
+for (var i = 0; i < geusses.length; i++) {
 
-if (counter + space === guesses.length) {
+if (counter + space === geusses.length) {
 
 showLives.innerHTML = "You Win!";
 
@@ -338,7 +338,7 @@ for (var i = 0; i < word.length; i++) {
 
 if (word[i] === geuss) {
 
-guesses[i].innerHTML = geuss;
+geusses[i].innerHTML = geuss;
 
 counter += 1;
 
@@ -402,7 +402,7 @@ buttons();
 
 
 
-guesses = [ ];
+geusses = [ ];
 
 lives = 10;
 
