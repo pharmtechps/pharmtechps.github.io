@@ -1,3 +1,4 @@
+<style>
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* Variabes */
 /* Mixin's */
@@ -288,6 +289,7 @@ p{
     }
 }
 
+</style>
 #my-word {
   margin: 0;
   display: block;
