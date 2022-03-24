@@ -1,4 +1,3 @@
-<script>
 window.onload = function () {
 
   var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
@@ -183,7 +182,7 @@ window.onload = function () {
       }
     }
   }
- 
+  
     
   // Play
   play = function () {
@@ -241,5 +240,3 @@ window.onload = function () {
     play();
   }
 }
-
- </script>
