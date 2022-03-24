@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* Variabes */
+/* Mixin's */
+.body2 {
+  background: green;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.wrappper {
+  width: 100%;
+  margin: 0 auto;
+}
+.wrappper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+canvas {
+  color: #fff;
+  border: #fff dashed 2px;
+  padding: 15px;
+}
+
+h1, h2, h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  margin: 5px 0;
+}
+
+h1 {
+  font-size: 2.6em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+p {
+  font-size: 1.6em;
+}
+
+#alphabet {
+  margin: 15px auto;
+  padding: 0;
+  max-width: 900px;
+}
+#alphabet:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#alphabet li {
+  float: left;
+  margin: 0 10px 10px 0;
+  list-style: none;
+  width: 50px;
+  height: 40px;
+  font-weight: bold;
+  padding-top: 5px;
+  background: #fff;
+  color: green;
+  cursor: pointer;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border: solid 1px #fff;
+}
+#alphabet li:hover {
+  background: green;
+  border: solid 3px #fff;
+  color: #fff;
+}
+
+#my-word {
+  margin: 0;
+  display: block;
+  padding: 0;
+  display: block;
+}
+
+#my-word li {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 1.6em;
+}
+
+.active {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+.active:hover {
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+#mylives {
+  font-size: 1.6em;
+  text-align: center;
+  display: block;
+}
+
+button {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  background: purple;
+  color: #fff;
+  border: solid 3px #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  outline: none;
+  font-weight: bold;
+}
+button:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+  border: solid 1px #fff;
+  color: purple;
+}
+
+@media (max-width: 767px) {
+  #alphabet {
+    padding: 0 0 0 15px;
+  }
+}
+@media (max-width: 480px) {
+  #alphabet {
+    padding: 0 0 0 25px;
+  }
+}
+footer {
+  text-align: center;
+  padding-top: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* Variabes */  
+$orange: #ffa600;
+$green: #c1d72e;
+$blue: #82d2e5;
+$grey:#f3f3f3;
+$white: #fff;
+$base-color:$green ;
+
+
+
+/* Mixin's */ 
+
+@mixin transition {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin clear {
+  &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+}
+
+ @mixin box-size {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ @mixin transition {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin fade {
+  -moz-transition: all 1s ease-in;
+  -moz-transition:all 0.3s ease-in-out;
+  -webkit-transition:all 0.3s ease-in-out;
+}
+
+@mixin opacity {
+  opacity:0.4;
+  filter:alpha(opacity=40); 
+  @include fade;
+}
+
+@mixin corners ($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius; 
+  -khtml-border-radius: $radius; 
+}
+
+.body2 {
+  background:green;
+  font-family: 'Roboto', sans-serif;
+  color:$white;
+  height:100%;
+  text-align:center;
+  font-size:18px;
+}
+
+.wrappper{
+  @include clear;
+  width:100%;
+  margin:0 auto;
+}
+
+
+canvas{
+  color:$white;
+  border: $white dashed 2px;
+  padding:15px;
+}
+
+h1, h2, h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	margin:5px 0;
+}
+
+h1 {
+	font-size: 2.6em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+p{
+  font-size: 1.6em;
+}
+
+#alphabet {
+  @include clear;
+  margin:15px auto;
+  padding:0;
+  max-width:900px;
+}
+
+#alphabet li {
+  float:left;
+  margin: 0 10px 10px 0;
+  list-style:none;
+  width:50px;
+  height:40px;
+  font-weight:bold;
+  padding-top:5px;
+  background:$white;
+  color:green;
+  cursor:pointer;
+  @include corners(5px);
+  border: solid 1px $white;
+    
+    &:hover{
+      background:green;
+      border: solid 3px $white;
+      color:$white;
+    }
+}
+
+#my-word {
+  margin: 0;
+  display: block;
+  padding: 0;
+  display:block;
+}
+
+#my-word li {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0 10px;
+  font-size:1.6em;
+}
+
+.active {
+  @include opacity;
+  cursor:default;
+    
+  &:hover{
+      @include fade;
+      @include opacity;
+    }
+}
+
+#mylives{
+  font-size:1.6em;
+  text-align:center;
+  display:block;
+}
+
+button{
+  @include corners (5px);
+  background:purple;
+  color:$white;
+  border: solid 3px $white;
+  text-decoration:none;
+  cursor:pointer;
+  font-size:1.2em;
+  padding:18px 10px;
+  width:180px;
+  margin: 10px;
+  outline: none;
+  font-weight:bold;
+  
+    &:hover{
+      @include transition;
+      background:$white;
+      border: solid 1px $white;
+      color:purple;
+    }
+}
+
+@media (max-width: 767px) {
+  #alphabet {
+  padding:0 0 0 15px;
+}
+  }
+
+  @media (max-width: 480px) {
+  #alphabet {
+  padding:0 0 0 25px;
+}
+  }
+
+footer
+{text-align:center;
+padding-top:10px;}
+
+.lottie{
+  float:right;
+  padding:0px;
+}
+.inline{
+  display: inline-block;
+  float:right;
+}
+.float{
+  float:right;
+}
