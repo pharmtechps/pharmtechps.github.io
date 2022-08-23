@@ -1,0 +1,613 @@
+<html>
+
+<!--If your looking at my code you are probably like what you see so drop me an email at pharmtechps@gmail.com
+If your wondering what tool I have used  to make my profile page, On top of the usually html,css and js. I have used bootstrap 5, lottie files for animation
+figma and various adobe tools for the images. I used the text editor ATOM for this project.
+Hope to work with you soon :)-->
+<header>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+</header>
+
+<DIV>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+<DIV>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Pani">
+    <meta name="generator" content="Pani">
+    <title>My Page</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/heroes/">
+
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('user_4bce2fpEUI9tSXWMD3IK1')
+
+</script
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+
+
+ 
+    <link href="heroes.css" rel="stylesheet">
+  </head>
+  <body>
+
+<main>
+
+
+
+
+
+  <a id ="home"> </a>
+  <div class="container">
+
+
+
+     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+
+
+
+<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+
+
+
+         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+         <span class="fs-4 text-primary"><b> Portfolio</b> <i class="fas fa-laptop-medical"></i></span>
+       </a>
+
+       <ul class="nav nav-pills ">
+
+<!--Collapsable part of navigation for mobile set as sm (small) so only comes up -->
+  <nav class="navbar navbar-expand-sm navbar-primary" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+ <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-light"><i class="fas fa-bars" style="font-size:25px"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+  <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+             <li class="nav-item"><a href="#whatioffer" class="nav-link">What I offer</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+           <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+     </header>
+   </div>
+
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_01jwptn4.json"  background="transparent"  speed="1"  style="width: 400px; height: 300px;"  loop  autoplay></lottie-player>
+      </div>
+
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Panayiotis (Pani) Sphikas</h1>
+        <p class="lead">Mobil number: 07950674272
+        <br>
+          email: pharmtechps@gmail.com
+          
+        
+        </p>
+        
+        <br>
+        
+
+<br>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+  <a href="#about"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2">About</button></a>
+<a href="#projects"><button type="button" class="btn btn-outline-secondary btn-lg px-4">See Projects</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--I added hidefornow to hide this elemen will need to remove later and marked div below -->
+<style>
+.hidefornow  {display:none;
+}
+</style>
+
+
+  <div class="b-example-divider"></div>
+   <!--About Me -->
+<a id ="about"></a>
+    <div class="container py-4">
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+
+    <img src="https://user-images.githubusercontent.com/67371468/149678671-09245fd2-7f85-4997-83c9-d27c0928623a.png" style="width:90%"alt="Me">
+
+        </div>
+
+        <div class="col-md-6">
+          <div class="h-100 p-5 bg-light border rounded-3">
+            <h2>About Me</h2>
+  Hi, I am Pani - I am a operations manager, pharmacy technician, developer, educator, digital healthcare
+generalist, product manager, and UX designer. I am passionate about innovative user-centered
+
+design solutions that improve the user and patient experience.
+            <br>
+           As a generalist with a broad range of skills developed through various learning avenues, I have honed my problem-solving skills to identify patterns in human behaviors that I apply to solve problems related to design, people management, projects, and systems. 
+
+I bring a broad range and specialist expertise and generalist knowledge that make me verstile in my approach to any task that is presented. 
+            But more importantly, I care about people- my staff, patients, and our communities. 
+<br> 
+          
+ I have managed, led on the development and consulted for various digital healthcare solutions, for a host of service users and customers: from websites, digital signage boards, web apps, coms material, E-learning and data structures.
+            
+             <br>
+             Take a look of some of my broad range of work, download my CV and reach out if you would like to work together.
+                              <br>
+             <br>
+            mail: pharmtechps@gmail.com
+             <br>
+     tel: 07950674272
+
+             </p>
+            <a href="#about"><button class="btn btn-outline-secondary" type="button">See CV</button> </a>
+          </div>
+        </div>
+    </div>
+    </div>
+  
+  
+     
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+
+     
+ <span class="fs-4 border-bottom">Work Experience</span>
+    
+  <h2>Pharmacy operations manager-<span style="font-size:20px">2018 to date</span></h2>
+    <h4> University College London Hospital </h4>
+    <p class="fs-5 col-md-12">Responsible and accountable for the delivery of an effective, efficient and high-quality pharmacy
+medicines management and distribution service across 7 hospital sites. <br>
+    
+Directly manage:<br>
+● 7 hospital pharmacy dispensaries ● 80 Staff ● Pharmacy Digital services
+      <bR>
+● Team of clinical ward based pharmacy technicians
+● Pharmacy distribution service warehouse 
+ <br>
+  </p>
+ 
+   <h2>Pharmacy Education Programme Director-<span style="font-size:20px">2018 to date</span></h2>
+    <h4> University College London Hospital </h4>
+    <p class="fs-5 col-md-12">Oversee and accountable for pharmacy technician and support staff education development. This covers approx 160 staff and includes HEE funded pharmacy education and apprenticeship programmes.
+      
+   <h2>Chief Technician-<span style="font-size:20px">2018 to date</span></h2>
+    <h4> University College London Hospital </h4>
+    <p class="fs-5 col-md-12">Responsible and accountable for the delivery of an effective, efficient and high-quality pharmacy
+medicines management and distribution service across 7 hospital sites. </p>
+  <h2>Product Manager AIMM and e-Learning design lead (Moodle)-<span style="font-size:20px">2018 to date</span></h2>
+    <h4> University College London Hospital </h4>
+    <p class="fs-5 col-md-12">Secondment to Design, develop, market, implement and deliver the Accreditation in Medicines Management (AIMM)
+programme across the London South East, Essex and Kent HEE region. </p>
+  </div>
+  <br>
+  
+<div class="b-example-divider"></div>
+  <!--What I offer-->
+  <a id ="whatioffer"> </a>
+  <div class="px-4 pt-5 my-5 text-center">
+      <h1 class="display-4 fw-bold">Experience</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+
+Take a deep dive in my current role, my experience and what I can provide.
+          </p>
+        
+        
+      </div>
+    </div>
+<div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-12 p-3 p-lg-5 pt-lg-3">
+        <h1 class="fw-bold lh-1 text-center">Digital</h1>
+<br>
+<p class="lead text-center">
+  
+I manage the pharmacy digital team whose purpose is to manage and create digital software solutions for our users. <br>
+ As the leader of this small team, I am the manager, UX designer, researcher, solutions architect, developer, product manager, front-end coder (HTML, CSS and JS) and the bridge between technical and operations. 
+ I have many successful projects in use today ranging from web apps, websites, elearning, digital signage, robotics, radio frequency electronics and barcoding. This experience has allowed me to learn the importance of the User Experience (UX) design process and principles. <br>
+The pharmacy digital team is responsible for 35 applications comprising a mixture of internal developed and off-the-shelf solutions held on five virtual servers. I am responsible for various digital kits and hardware including three pharmacy dispensing robots, RFID patient bedside lockers and electronic controlled drug cabinets. <br>
+  I am an EPIC superuser and I was heavily involved in the design of various EPIC workstreams, including inventory, ambulatory and willow. I am the bridge between EPIC and pharmacy operational activity due to my technical knowledge and skill set.
+  <br>  
+The most recent project I have been working on is our new app platform I designed, coded, developed, tested and released. (click the image on the left) 
+<br><br>
+So what can I offer? <br>
+I carefully craft comprehensive digital experiences that function consistently and seamlessly across all browsers. <br>
+From desktop screens, to mobile phones and tablets, my websites and applications scale and adapt smoothly to the ever-changing context of multi-device users and interactions. <br>
+I create digital solutions through five phases: Discovery, Prototyping, Testing, Iteration and Release. Person-centred design is key to producing a product that is pain-free, easy to use, meets the needs of the user and the business, therefore each stage is completed collaboratively with the users and stakeholders. <br> <br>
+       
+  <a href = "www.google.com" target = "blank">        <img src="https://user-images.githubusercontent.com/67371468/183435815-fa2068bd-dca2-43c6-8f2d-6d98e0a2b76c.PNG"  style="width: 400px;" class ="zoom"</img>
+  </a>
+  <div class = "text-center">
+     <p class="blockquote-footer"> Mew app landing page (click to open)</P>
+</p>
+                                 </div>
+      </div>
+  
+
+      
+    </div>
+  </div>
+
+
+  
+   <div class="container my-5">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="fw-bold lh-1 text-center">Education</h1>
+<br>
+<p class="lead">In my Education program director role, I oversee and develop the education strategy of the entire pharmacy technician and support staff workforce, this consists of 160 WTE staff. I ensure that quality standards are met, including resources, appropriately trained supervisors, monitoring of progress, and equity.
+<br>
+I am an Educational Supervisor and have been an A1 Assessor for a range of apprenticeship frameworks at various levels including Leadership, Data Analyst, Project Management, and Business & Administration. 
+<bR>
+I am responsible for ensuring all staff are trained and competent to do their roles and that training packs/accreditations are developed and implemented. I have designed and implemented eLearning/blended learning programs using Moodle and Google Classroom.
+
+</p>
+
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg">
+          <img src="https://user-images.githubusercontent.com/67371468/183471369-50add908-31ba-49d9-88ea-71be6e4c6d0b.PNG" style = "width:400px;" class = "zoom"></img>
+
+
+        </div>
+      </div>
+    </div>
+  
+    <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class=" fw-bold lh-1 text-center">Operations</h1>
+            <br>
+            <p class=" lead "> 
+I am responsible for the strategic development, planning, organisation and delivery of the pharmacy patient service areas across all UCLH hospital sites and the Pharmacy Distribution Center. At the core of this responsibility lies the Medicines Supply chain process (from receipt of medicine to supply to our service users). <br>Our service users are composed of patients, hospital ward areas, other NHS trusts, clinical research facilities, external sales customers, commissionaires and homecare companies. <br>
+I look after two disctinct areas:<br>
+a. Patient services:  I am responsible for the safe and efficient delivery of pharmacy services to patients in line with professional, regulatory and legal requirements within the dispensary areas. In and outpatient dispensing services are provided from five dispensary areas servicing seven hospital sites. Our dispensaries complete approx 30,000 transactions/lines per month. <br>
+b.Pharmacy Distribution Center: Purchases in excess of £110m of medicines per year and is licensed by the MHRA as a medicines wholesaler and by the Home Office to supply Controlled Drugs. In addition to the provision of medicines to all hospital areas, the unit provides services to a number of external customers, including other local NHS trusts. 
+ </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+
+
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-">
+            
+            <img src ="https://user-images.githubusercontent.com/67371468/183475128-507d42c2-8c6c-468e-9acd-96622c606bf3.PNG" style ="width:400px" class = "zoom"> </img><br><br>
+          <p class="blockquote-footer"> Medication journey visio designed explaining pharmacy process (click to open)</P>
+            <img src="https://user-images.githubusercontent.com/67371468/183473586-c4060c6a-8a24-4e81-8e39-603f0c998d1b.PNG" style = "width:400px" class = "zoom"></img><br><br>
+          <p class="blockquote-footer"> My areas of responsibilty (click to open)</P>
+
+
+          </div>
+        </div>
+      </div>
+  <div class="container my-5">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="fw-bold lh-1 text-center">Leadership</h1>
+<br>
+<p class="lead">Managing such large multidisciplinary teams requires leadership that encompasses empathy, compassion, honesty and engagement. These are common components that develop trust, a key requirement in highly effective teams. <br>Due to my leaderhsip skills I was awarded the collegue of the year 2019 as nominated by the pharamcy workforce, first time a senior leader has been awarded this.
+          I have completed MSc and PgCertificates in leadership. 
+  I am also led and facilated organisational change workshops across vairous pharmacy teams.
+  
+          </p>
+<br>
+          <br>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg">
+          <img src="https://user-images.githubusercontent.com/67371468/183454523-a5f470de-d1c8-4b29-8566-7246d26e6fe6.png"  style="width:400px;" class = "zoom"></img>
+
+<br>
+        <br>
+
+        </div>
+      </div>
+    </div>
+      <div class="b-example-divider"></div>
+ 
+<!--projects-->
+<a id ="projects"> </a>
+<div class="b-example-divider"></div>
+  <div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">Some Recent Projects 2021/22</h2>
+
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://user-images.githubusercontent.com/67371468/150221869-79f3e524-a1fa-4be8-be75-4521cd6877a8.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Final label</h5>
+            <p class="card-text"> A free labelling web application to provide pharmacy users a business continuity system or primary labelling system for
+               creating patient friendly labels for affixing to prepared medication. Created by using front end technology, (HTML, CSS, JS Jquery) and JSON files . </p>
+<a href="#" class="btn btn-primary">Open App</a>     </p>
+
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Front End Web application</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://user-images.githubusercontent.com/67371468/150548696-bc08f208-20d9-4954-a27f-866f92414065.jpeg" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title">RFID lock solution</h5>
+            <p class="card-text">
+              By reverse engineering the electronic RFID locks being used for patient bed side lockers, I was able to create a bespoke RFID programming and database system. This system of programming allows us to have a more robust and reliable system by reducing regular breakdowns and improving patient safety.
+This project has allowed me to develop a detailed understanding of passive and active RFID technology.
+              </p>
+
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">RFID Hardware and Software </small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://user-images.githubusercontent.com/67371468/183435815-fa2068bd-dca2-43c6-8f2d-6d98e0a2b76c.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pharmacy App Home Page</h5>
+            <p class="card-text">With various systems being replaced and the organisation moving to the Microsoft Edge browser, this has provided the pharmacy IT team the opportunity to give our home page a must needed face lift. “Pharmweb” the pharmacy landing page hosts and provide user access to all pharmacy
+              applications and tools, mixing the ability to browse, search and use quick links to access commonly used applications. </p>
+            <a href="#" class="btn btn-primary">Open App Page</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Project Lead, Product Manager, UX designer, User researcher, Solutions Architech and Developer</small>
+          </div>
+        </div>
+      </div>
+    </div>
+<br>
+
+<!--previosu projects-->
+
+  <h5 class="pb-2 border-bottom">Previous Highlight Projects</h5>
+
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://user-images.githubusercontent.com/67371468/150515640-ffd07f23-1081-4ff0-8022-0ccc9492ba26.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Near Miss Error App</h5>
+          <p class="card-text">Asp.net application to allow users to record in process errors picked up at the final accuracy check. The Near Miss Error app presents data in a format that allow users to learn from system errors that are made and recorded.
+User research was key in the design process in creating a tool that avoids blame and focus on system learning.
+ </p>
+<a href="#" class="btn btn-primary">Open Case Study</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Project Lead, Product Manager, UX desingner, User researcher & Solutions Architech</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://user-images.githubusercontent.com/67371468/123655648-11452380-d827-11eb-94be-1778c9950655.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Moodle site for Regional/National Pharmacy Accreditation</h5>
+          <p class="card-text">
+
+    I was seconded to London Pharmacy Education and Training to work on turning the accreditation in medicines management qualification into a blended learning model using the Moodle platform.
+    For this project I used tools like the “big blue button” (virtual classroom) “Camtasia” (to create videos) and all the usual Moodle tools such as quizzes, assignments, books etc.
+
+          </p>
+
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">E-learning Moodle site</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://user-images.githubusercontent.com/67371468/123638797-7b55cc80-d817-11eb-8f85-6875a048b744.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">UCLH back up labeller</h5>
+          <p class="card-text">With the introduction of a new EHRS system, our old backup labelling system would need to be replaced due to the aging technology
+            used to develop it.
+As the pharmacy digital manager my role in this project was front heavy with wire framing, researching, design and testing.
+The backup label we have released works so well that users can produce a label within 1 minute with no directions, creating a pain free application to be used in the event of a stressful situation.
+ </p>
+<a href="#" class="btn btn-primary">See UX process</a>
+
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">UX designer, Researcher, Tester and Project Lead</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="b-example-divider"></div>
+  <a id="contact"></a>
+  <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-4 fw-bold lh-1 mb-3">Contact me</h1>
+         <span class="emoji wave" role="img" aria-label="hand wave"></span></h4>
+        <p class="col-lg-10 fs-4">Do you want to work together or have any questons? Fill out the form and fill me in with the details .</p>
+      </div>
+    
+    <!--form is usising emailJS-->
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form class="p-4 p-md-5 border rounded-3 bg-light" id="form">
+         <div class="form-floating mb-3">
+    <input type="text" name="user_email" id="user_email" class ="form-control"placeholder="name@example.com">
+             <label for="floatingInput">Your email address</label>
+  </div>
+              <br>
+               <div class="form-floating mb-3"> 
+    <textarea placeholder="Type your message here...." name = "message" id="message" tabindex="5" required  class="form-control"></textarea> 
+                 <label for="floatingInput">Message</label>
+        </div>
+<br>
+                <input type="submit" class="w-100 btn btn-lg btn-primary" id="button" value="Send Message" >
+            <br>
+   
+          <hr class="my-4">
+          <small class="text-muted">Alteranively email me at pharmtechps@gmail.com.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="b-example-divider"></div>
+
+   <div class="container px-4 py-5" id="icon-grid">
+     <h5 class="pb-2 border-bottom">Just a few things tools I like to use.........</h5>
+<img src="https://user-images.githubusercontent.com/67371468/150499971-1dfa0387-d12a-49c7-998c-2556ac449288.jpg" class="img-fluid" alt="...">
+
+       </div>
+     </div>
+     <div class="b-example-divider"></div>
+
+     <div class="bg-dark text-secondary px-4 py-5 text-center">
+       <div class="py-5">
+         <h1 class="display-5 fw-bold text-white">Find me on</h1>
+         <div class="col-lg-6 mx-auto">
+           <p class="fs-5 mb-4">You can find me on the followning platforms.</p>
+           <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+<div style="font-size:40px;"
+<i class="fab fa-linkedin"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-codepen"></i>
+<i class="fab fa-github"></i>
+<i class="fab fa-medium"></i>
+</div>
+
+
+
+           </div>
+<br>
+<br>
+           <a href="#home" class ="text-secondary text-center">
+           <i class="fas fa-arrow-up" style="font-size:40px;"></i>
+           <br>
+           <p>Back to the top</p>
+           </a>
+         </div>
+       </div>
+     </div>
+</main>
+
+  </body>
+</html>
+
+<style>
+.b-example-divider {
+  height:0.5rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+@media (min-width: 992px) {
+  .rounded-lg-3 { border-radius: .3rem; }
+}
+
+/*waving emoji*/
+.wave::after {
+    content: '✋';
+    --emoji: '👋';
+    animation-name: twoFrames;
+    animation-duration: 1s;
+}
+
+@keyframes twoFrames {
+    50% {
+        content: var(--emoji);
+    }
+}
+
+
+.emoji {
+    font-size: 40px;
+    min-width: 1.4em;
+    margin: 0.3em 0.4em;
+    text-align: center;
+}
+
+.emoji::after {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+  
+   .zoom:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+</style>
+
+
+//EMAILJS SCRIPT
+<SCRIPT>
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'contact_form';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Message';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+</SCRIPT>
