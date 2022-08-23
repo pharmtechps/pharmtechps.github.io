@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Final Label MVP 21/10/21</title>
+  <link rel="stylesheet" href="./FinalLabel.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<head>
+  
+  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css"/>
+
+<link rel="stylesheet"  href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+  
+<script src = "https://code.jquery.com/jquery-1.7.2.js"> </script>
+
+<script src = "https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"> </script>
+
+  
+</head>
+<body>
+ <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class ="pil">PIL <i class="fas fa-pills"></i> </span></a>  
+      <a class="navbar-brand" href="#"><span style="font-size: 20px; color: orange;"> <b>Final Label</b>
+      <i class="fas fa-file-prescription"></i>
+      </span>
+        <small>beta version
+    </small>
+
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Guide</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+          
+    
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  
+<!-- DRAWER -->
+  
+<div class="drawer" title="Click to close">
+  <div class="container">
+    
+  </div>
+</div>
+<!-- CONTENT -->
+<div class="container">
+  <div class="noprint">
+     
+<br>
+  </div>
+  <div class="row">
+    
+    <!-- LEFT -->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5">
+      <div class="noprint">
+      <p class="header header-input">input</p>
+      <div class="box">
+        
+        
+          <div class="form-group">
+            <input class="form-control" id="form-patientname" type="text" placeholder="Patient Name"oninput="myFunction(); myBaglabel()" maxlength="30">
+          </div>
+        
+          <div class="form-group">
+            <input class="form-control" id="form-ward" type="text" placeholder="Ward/Clinic" oninput="myWard(); myBaglabelward()" maxlength="8">
+          </div>
+        
+       
+          <label> Drug Label </label>
+          <div class="form-group">
+          
+           <!-- Dropdown --> 
+            <div id='result' class ="drugname" >
+              <a id = "backtodrug">
+  <select id="locality-dropdown" name="locality" style='width: 270px;' onchange="myNewFunction(this);">
+                </select> </a>
+
+            
+            
+            <p class = "freetype">Or <button Onclick= "ShowAndHide()"> Free type </button></p>
+          </div>
+        </div>          
+        <div class="SectionName" id ="SectionName" style= "display: none">
+            <input class="form-control" id="form-altdrug" type="text" placeholder="Freetype Drug Name/Strength/Form" oninput="myAltdrug()">
+          </div>
+         <br>
+            
+
+
+       
+          <div class = "form-qtydirection">
+            <input class="form-control" id="form-qty" type="text" placeholder="Quantity" oninput="myQty()" maxlength="10">
+          </div>
+          
+          <div class="form-group">
+            <textarea class="form-control" id="form-directions" placeholder="Directions"oninput="myDirection()" maxlength="150"></textarea>
+           
+          </div>
+          
+          <label> BNF code</label>
+         <div class="form-BNF">
+            <select class="form-control" id="form-BNF" type="text" placeholder="BNF labels" multiple oninput="myBNF()">
+          <option label="Select"></option>
+
+                <option label="B1">Warning: This medicine may make you sleepy</option>
+                <option label="B2">Warning: This medicine may make you sleepy. If this happens, do not drive or use tools or machines. Do not drink alcohol</option>
+                <option label="B3">Warning: This medicine may make you sleepy. If this happens, do not drive or use tools or machines</option>
+                <option label="B4">Warning: Do not drink alcohol </option>
+                <option label="B5">Do not take indigestion remedies 2 hours before or after you take this medicine</option>
+                <option label="B6">Do not take indigestion remedies, or medicines containing iron or zinc, 2 hours before or after you take this medicine </option>
+                <option label="B7">Do not take milk, indigestion remedies, or medicines containing iron or zinc, 2 hours before or after you take this medicine </option>
+                <option label="B8">Warning: Do not stop taking this medicine unless your doctor tells you to stop</option>
+                <option label="B9">Space the doses evenly throughout the day. Keep taking this medicine until the course is finished, unless you are told to stop</option>
+                <option label="B10">Warning: Read the additional information given with this medicine</option>
+                <option label="B11">Warning: Protect your skin from sunlight—even on a bright but cloudy day. Do not use sunbeds</option>
+                <option label="B12">Do not take anything containing aspirin while taking this medicine</option>
+                <option label="B13">Dissolve or mix with water before taking</option>
+                <option label="B14">This medicine may colour your urine. This is harmless</option>
+                <option label="B15">Caution: flammable. Keep your body away from fire or flames after you have put on the medicine</option>
+                <option label="B16">Dissolve the tablet under your tongue—do not swallow. Store the tablets in this bottle with the cap tightly closed. Get a new supply 8 weeks after opening</option>
+                <option label="B17">Do not take more than . . . in 24 hours</option>
+                <option label="B18">Do not take more than . . . in 24 hours. Also, do not take more than . . . in any one week</option>
+
+                <option label="B19">Warning: This medicine makes you sleepy. If you still feel sleepy the next day, do not drive or use tools or machines. Do not drink alcohol</option>
+                <option label="B20"></option>
+                <option label="B21">Take with or just after food, or a meal</option>
+                <option label="B22">Take 30 to 60 minutes before food</option>
+                <option label="B23">Take this medicine when your stomach is empty. This means an hour before food or 2 hours after foo</option>
+                <option label="B24">Suck or chew this medicine</option>
+                <option label="B25">Swallow this medicine whole. Do not chew or crush</option>
+                <option label="B26">Dissolve this medicine under your tongue</option>
+                <option label="B27">Take with a full glass of water</option>
+                <option label="B28">Spread thinly on the affected skin only</option>
+                <option label="B29">Do not take more than 2 at any one time. Do not take more than 8 in 24 hours</option>
+                <option label="B30">Contains paracetamol. Do not take anything else containing paracetamol while taking this medicine. Talk to a doctor at once if you take too much of this medicine, even if you feel well</option>
+                       <option label="B32">Contains aspirin. Do not take anything else containing aspirin while taking this medicine</option>
+
+    </select>
+          </div>
+          
+         
+         
+          <br>
+        <p><b>Print Labels </b></p>
+        
+          
+         <input type="button" value="Main" onclick="printDiv()" class="btn btn-info" style= "width:72px; height:40px; margin-right:15px;margin-top:12px;">
+                
+                <input type="button" value="BNF" onclick="printDivBNF()" class="btn btn-success" style= "width:72px; height:40px; margin-right:15px;margin-top:12px;">
+        <span hidden>
+         <button  id="myBtn" class="btn btn-success" style= "width:72px; height:40px; margin-right:15px; margin-top:12px" >Bag </button>
+        </span>
+        
+        <input type="button " value="Next Item" onclick="Newdrug()" onclick = "location.href= 'backtodrug';" class="nextitembtn btn btn-default" style= "width:110px; height:40px; margin-top:12px" hidden>
+        
+        <button onClick="window.location.href=window.location.href" class="nextitembtn btn btn-default" style= "width:110px; height:40px; margin-top:12px" hidden> New Patient  </button>
+                               
+        </form>
+      </div>             
+      </div>
+    </div>
+    <!-- RIGHT -->
+    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-7">
+      <p class="header header-output">Dispensing Label</p>
+      <div class="box" id="output"></div>
+      
+      <div id = "lab">
+      <table id = "col0" width="600px" height="auto">
+       <tr> 
+         <td class ="col0" contenteditable ="true" style = "text-align:center; font-family:verdana">  <b>Keep out of reach and site of children </b> </td>
+       </tr>
+      </table>
+      
+      
+      
+      <table id = "col1" width="600px" height="50px">
+       <tr> 
+         <td class ="col1" id= "druglabel" contenteditable ="true" style = "font-size:20px; text-align:center"> <b> Drug Name </b> </td>
+       </tr>
+      </table>
+      
+      <table id = "col2" width="600px" height="150px">
+       <tr> 
+         <td class ="col2" id="directions" contenteditable ="true" style = "font-size:20px; text-align:center ; font-family:verdana">Directions</td>
+       </tr>
+      </table>
+      
+      <table id="col3">
+        <tr>
+          
+      <td class="col3" id = "datelabel" width="50px"><span id="date" onLoad= "myBaglabeldate()" style ="text-align:center ; font-family:verdana"> </span></td>
+                                      
+      <td class="col4" id="patientname" oninput = "myfunctionbag ()" width="300px" style ="text-align:center; font-family:verdana"><i> </i></td>
+                                                                    
+      <td class="col5" id = "qty" contenteditable ="true" width ="120px" style ="text-align:center ; font-family:Arial"> Qty </td>
+                                                              
+      <td class="col6" id = "location" contenteditable ="true" width = "94px" style ="text-align:center"></td>
+      
+    </tr>
+    
+  </table>
+                                                                              <table id = "col0" width="600px" height="auto">
+       <tr> 
+         <td class ="col0" contenteditable ="true" style = "text-align:center; font-family:verdana" id = "onlabeladdress">  <i>Type Pharmacy address here</i> </td>
+       </tr>
+      </table>
+      </div>
+      <br>
+      <br>
+      <br>
+  <div id = "printBNF">
+      <table id = "col7" width="600px" height="200px">
+        <tr>
+          <td class = "col7" id = "BNF" contenteditable ="true" style ="text-align:center">
+            BNF warnings
+          </td>
+        </tr>
+      </table>
+      
+    </div>
+  </>
+</div>
+                                       
+       
+                                         <!-- Trigger/Open The Modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+ 
+  <div class="modal-content" id= "baglabel">
+    <span class="close">&times;</span> 
+    <p> </p>
+      <div class ="twrap">
+    <table id ="bag-ptname" width="600px">
+    <td id = "patientbag" class = "patientbag" width="600px" style="font-size:3vw; text-align:center"> Patient Name
+                         </td>
+    </table>
+    <table id = "bag-location" width="600px">
+<td id = "locationbag" class = "patientlocation"style="font-size:2vw; text-align:center"> location
+                         </td>
+    </table>
+    
+      <table id = "bag-date" width="600px" >
+      <td class ="date" id="datebag"style="font-size:1.5vw; text-align:center " >
+    <p id="demo"></p>  
+</td>    
+        </table>
+        <table>
+   <td id = "addressbag" width="600px" style="font-size:1vw; text-align:center " > address
+        </td>
+                      
+   </table>
+  </div>
+  </div>
+  <div class = "modal-content2">
+        <input type="button" value="Print" class = "bagbutton" onclick="printDivBag()">
+
+  </div> 
+                          
+  </div>
+
+</div>                              
+  <footer>
+  <div class ="footer">
+    <p> PIL<i class="fas fa-pills"></i> / Version: 1.1 2020/03/09 </p> 
+    <small>  <a href= "www.google.com"> Documentation </a></small>  <small> <a href= "www.google.com"> User Guide </a></small> <small> <a href= "www.google.com"> Contact Us </a> </small> 
+          </div>
+  <br>
+  <p style= "text-align:center">
+     <i><small> <b>Disclaimer </b> <br>
+All of our software is covered by this disclaimer: <br>
+While PIL makes every effort to deliver high-quality products, we do not
+guarantee that our products are free from defects. Our software is provided “as is," and you use the software at your own risk. <br>
+We make no warranties as to performance, merchantability, fitness for a particular purpose, or any other warranties whether expressed or implied. <br>
+No oral or written communication from or information provided by PIL shall create a warranty. <br>
+Under no circumstances shall PIL  be liable for direct, indirect, special,
+incidental, or consequential damages resulting from the use, misuse, or inability to use this software,even if PIL has been advised of the possibility of such damages.</i> </small>
+</p>
+  </footer>
+ </body>
+                                       </html>     
+                                              <script>
+                                                
+                                                function myFunction() {
+  var a = document.getElementById("form-patientname").value; document.getElementById("patientname").innerHTML = a;
+}
+
+function myWard() {
+  var b = document.getElementById("form-ward").value; document.getElementById("location").innerHTML= b;
+}
+
+function myBNF() {   
+    var e = document.getElementById("form-BNF").value; 
+document.getElementById("BNF").innerHTML= e  
+}
+
+function myAltdrug() {
+    var f = document.getElementById("form-altdrug").value; 
+document.getElementById("druglabel").innerHTML= f;  
+}
+  
+function myQty(){
+              var c = document.getElementById("form-qty").value; document.getElementById("qty").innerHTML= c;
+}
+
+  function myDirection(){
+   var d = document.getElementById("form-directions").value; document.getElementById("directions").innerHTML= d;
+              }
+
+
+  
+
+//Date
+ {
+   var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+       document.getElementById("date").innerHTML =
+today = dd + '/' + mm + '/' + yyyy;
+document;
+}
+    
+  // Select Option with Search usin Jquery
+$(document).ready(function(){
+ 
+  // Initialize select2
+  $("#locality-dropdown").select2();
+
+  // Read selected option
+  $('#but_read').click(function(){
+    var username = $('#locality-dropdown option:selected').text();
+    var userid = $('#locality-dropdown').val();
+
+    $('#result').html("id : " + userid + ", name : " + username);
+
+   
+  });
+});
+            
+
+
+
+
+  //fetch JSON data file on Github
+let dropdown = document.getElementById('locality-dropdown');
+dropdown.length = 0;
+
+let defaultOption = document.createElement('option');
+defaultOption.text = 'Search Medication';
+
+dropdown.add(defaultOption);
+dropdown.selectedIndex = 0;
+
+const url = 'https://pharmtechps.github.io/BDIS/drugfiletest.json';
+
+fetch(url)  
+  .then(  
+    function(response) {  
+      if (response.status !== 200) {  
+        console.warn('Looks like there was a problem. Status Code: ' + 
+          response.status);  
+        return;  
+      }
+
+      // Examine the text in the response  
+      response.json().then(function(data) {  
+        let option;
+    
+    	for (let i = 0; i < data.length; i++) {
+          option = document.createElement('option');
+      	  option.text = data[i].Column1;
+      	  option.value = data[i].abbreviation;
+      	  dropdown.add(option);
+    	}    
+      });  
+    }  
+  )  
+  .catch(function(err) {  
+    console.error('Fetch Error -', err);  
+  });
+                              
+
+// display selection from search medication json file to inner html.
+
+function myNewFunction(element) {
+    var text = element.options[element.selectedIndex].text;
+    document.getElementById("druglabel").innerHTML = text;
+}
+
+
+
+
+//Toggle Show and Hide for alternate drug label entry
+function ShowAndHide() {
+    var x = document.getElementById('SectionName');
+    if (x.style.display == 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+
+
+
+//JS for bag label
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
+
+
+  
+  //inner html for bag label
+  function myBaglabel() {
+  var ba = document.getElementById("form-patientname").value; document.getElementById("patientbag").innerHTML = ba;
+  }
+
+function myBaglabelward(){
+  var bb = document.getElementById("form-ward").value; document.getElementById("locationbag").innerHTML = bb;
+ 
+}
+
+
+
+function myBaglabeldate(){
+  var bc = document.getElementById("date").value; document.getElementById("datebag").innerHTML = bc;
+ 
+}
+
+
+//modeldate and time bag label
+var dt = new Date(2018, 11, 24, 10, 33);
+document.getElementById("demo").innerHTML = dt;
+                                                </script>
+
+
+<style>
+  
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  max-width:970px;
+}
+.error {
+  background:rgb(242, 222, 222);
+  color:#a94442;
+}
+.info {
+  background:#eee;
+  color:#777;
+}
+.drawer {
+  display:none;
+  padding:15px 0;
+  cursor:pointer;
+}
+.drawer:hover {
+  opacity:.9;
+}
+h1 {
+  font-size:30px;
+  font-weight:400;
+  margin:15px 0 0 0;
+  color:orange;
+}
+  
+  .pil {
+  font-size:18px;
+  font-weight:600;
+  margin:15px 0 0 0;
+  color:grey;
+}
+  
+#info-btn {}
+#info-btn:hover {
+  cursor:pointer;
+  color:#5bc0de;
+}
+a.twitter {
+  display:block;
+  color:#5bc0de;
+  margin:0 0 15px 0;
+  font-size:12px;
+}
+form .form-group label {
+  color:#777;
+}
+#copy-btn {}
+.box {
+  padding:15px;
+  margin:0 0 15px 0;
+  background:#eee;
+}
+.header {
+  display:inline-block;
+  padding:5px 15px;
+  margin:0;
+  background:#eee;
+  color:#fff;
+  font-size:13px;
+}
+.header-input {background:#5cb85c;}
+.header-output {background:#5bc0de;}
+pre {
+  border:none;
+  background:#eee;
+  padding:0;
+}
+
+.
+.freetype{
+  float:right;
+  margin-top:0px;
+}
+
+
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 3% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 700px; /* Could be more or less, depending on screen size */
+  
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+
+.baglabel {
+  border: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.date {
+  border: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer{ 
+   font-size:15px;
+  padding-top:10%;
+  padding-left:40%;
+ 
+}
+  
+  
+  
+</style>
+<!-- partial -->
+  <script  src="./FinalLabel.js"></script>
+
+</body>
+</html>
