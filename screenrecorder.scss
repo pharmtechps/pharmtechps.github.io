@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+$font: Open Sans;
+$blue: #039BE5;
+
+body {
+  font-family: $font;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.nav {
+  display: block;
+  margin: auto;
+  text-align:center;
+  padding-top: 2em;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 1em;
+  font-family: $font;
+  
+  a {
+    cursor: pointer;
+    color: #fff;
+    padding: .5em 1.5em .5em 1em;
+    font-weight: 100;
+    
+    &:hover, &:focus {
+      background: none;
+    }
+  }
+}
+
+.nav li:nth-child(1), .nav li:nth-child(2) {
+    border-right: 1px solid rgba(255,255,255,0.5);
+}
+
+.land {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: $blue;
+  
+  .intro {
+    height: auto;
+    width: auto;
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 47%;
+    transform: translateY(-50%);
+    
+    img {
+      height: 5em;
+      width: 5em;
+    }
+    .logo {
+      height: 5.5em;
+      border-left: 1px solid #fff;
+      display: inline-block;
+      
+      h3 {
+        padding-left: .65em;
+        display: inline-block;
+        font-family: $font;
+        font-weight: 100;
+        color: #fff;
+      }
+    }
+    a {
+      display: inline-block;
+    }
+  }
+}
+
+#about {
+  padding: 3em 4em;
+  margin-bottom: 5em;
+  
+  h1 {
+    font-weight: 200;
+  }
+  h4 {
+    font-weight: 300;
+  }
+}
+
+.parts {
+  background: rgba(255,255,255,.5);
+  padding: 2em;
+  margin-top: 2em;
+}
+
+.s-img {
+  // background: lighten($blue, 10%);
+  background-size: cover;
+}
+
+.screenshot img {
+  display: block;
+  height: 30em;
+  width: auto;
+  text-align: center;
+  margin: -5em auto;
+  @media (max-width: 500px){
+    height: 20em;
+  }
+}
+
+#download {
+  padding: 4em;
+  margin-top: 4em;
+  h1 {
+    font-weight: 200;
+  }
+  h4 {
+    font-weight: 300;
+  }
+  .d-logo {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+    
+    .logo {
+      display: inline-block;
+      padding: 0 .75em;
+  
+      img {
+        height: 5em;
+        width: auto;
+      }
+    }
+  }
+}
+
+.button {
+  padding: .85em 1.5em;
+  border: solid thin white;
+  text-transform: uppercase;
+  background: transparent;
+  color: white;
+  transition: all 500ms ease;
+  margin: 0 1em;
+  font-weight: 200;
+  
+  &:hover, &:focus {
+    background: #fff;
+    color: $blue;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+footer {
+  background: $blue;
+  padding: .5em;
+  color: #fff;
+}
+
